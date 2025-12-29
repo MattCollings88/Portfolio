@@ -237,36 +237,10 @@
         .reel-container {
             max-width: 1000px;
             margin: 0 auto 4rem;
-            aspect-ratio: 16/9;
             background: rgba(0, 0, 0, 0.5);
             border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            overflow: hidden;
             border: 2px solid rgba(255, 107, 53, 0.3);
-        }
-
-        .reel-placeholder {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .reel-placeholder h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .reel-placeholder p {
-            color: var(--gray);
-            font-size: 0.95rem;
-        }
-
-        /* Replace .reel-placeholder with actual embedded video */
-        .reel-container iframe {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
         }
 
         .clients-section {
@@ -277,34 +251,38 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .client-item {
-            font-size: 1.2rem;
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 107, 53, 0.05);
+            border-radius: 4px;
             font-weight: 600;
             color: var(--light);
-            opacity: 0.8;
             transition: all 0.3s ease;
+            border: 1px solid rgba(255, 107, 53, 0.2);
         }
 
         .client-item:hover {
-            opacity: 1;
-            color: var(--primary);
+            background: rgba(255, 107, 53, 0.1);
+            transform: translateY(-5px);
         }
 
-        /* AI Work Section */
+        /* AI Section */
         .ai-section {
-            background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
-            padding: 6rem 5%;
+            text-align: center;
         }
 
         .coming-soon {
-            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 4rem 2rem;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 217, 255, 0.05);
             border-radius: 8px;
-            border: 2px dashed var(--accent);
+            border: 2px solid rgba(0, 217, 255, 0.2);
         }
 
         .coming-soon h3 {
@@ -485,25 +463,20 @@
     <section id="work" class="work-section">
         <h2>Traditional Work</h2>
         
-         <div class="reel-container">
-           <div style="padding:56.25% 0 0 0;position:relative;">
-               <iframe src="https://player.vimeo.com/video/1150181989?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                   frameborder="0" 
-                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                   referrerpolicy="strict-origin-when-cross-origin" 
-                   style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                   title="MattCollings2026Reel">
-            </iframe>
-               
-           </div>
-             <script src="https://player.vimeo.com/api/player.js">
-                 
-             </script>
-            
-            
-
+        <div class="reel-container">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1150181989?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                        title="Matt Collings 2026 Reel"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
-           
+
         <div class="clients-section">
             <h3 style="text-align: center; margin-bottom: 2rem; color: var(--gray); font-size: 1.2rem; letter-spacing: 2px;">
                 SELECT CLIENTS & AGENCIES
